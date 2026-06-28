@@ -1,1 +1,1 @@
-# qtype_tsumeshogi
+Moodle で詰将棋を出題 (1手詰めのみ)

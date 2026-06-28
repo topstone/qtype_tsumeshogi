@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Moodle XML format — qtype_tsumeshogi sample questions
+  Import via: 問題バンク → インポート → Moodle XML形式
+-->
+<quiz>
+
+  <!-- ============================================================
+       問題1: 一手詰 (馬による詰み)
+       局面: 後手玉が1九、先手は馬が2八と金が持ち駒
+       正解: G*1八 → 詰み
+       ============================================================ -->
+  <question type="tsumeshogi">
+    <name>
+      <text>詰将棋 001 — 一手詰（馬打ち）</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>次の一手で詰みを実現してください。</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>馬を打って詰みです。</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0</penalty>
+    <hidden>0</hidden>
+    <sfen>8k/9/8K/9/9/9/9/9/9 b B 1</sfen>
+    <correctanswer>B*8b</correctanswer>
+  </question>
+
+  <!-- ============================================================
+       問題2: 一手詰 (歩打ちによる詰み)
+       局面: 後手玉が5一、先手持ち駒に歩
+       正解: P*5二
+       ============================================================ -->
+  <question type="tsumeshogi">
+    <name>
+      <text>詰将棋 002 — 一手詰（歩打ち）</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>次の一手で詰みを実現してください。</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>歩を打って詰みです。</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0</penalty>
+    <hidden>0</hidden>
+    <sfen>4k4/9/4GK3/9/9/9/9/9/9 b P 1</sfen>
+    <correctanswer>P*5b</correctanswer>
+  </question>
+
+</quiz>
